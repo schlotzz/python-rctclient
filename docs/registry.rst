@@ -12,9 +12,6 @@ implemented as :class:`~rctclient.registry.Registry`, please head to the API doc
 object ID information. As the registry is a heavy object, it is maintained as an instance ``REGISTRY`` in the
 ``registry`` module and can be imported where needed.
 
-Object IDs
-**********
-
 The following list is a complete index of all the object IDs currently maintained by the registry.
 
 .. the following tables are generated from the registry in registry.py using generate_registry.py
@@ -30,7 +27,7 @@ acc_conv
 adc
 ===
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_adc.csv
@@ -38,7 +35,7 @@ adc
 bat_mng_struct
 ==============
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_bat_mng_struct.csv
@@ -46,7 +43,7 @@ bat_mng_struct
 battery
 =======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_battery.csv
@@ -54,7 +51,7 @@ battery
 buf_v_control
 =============
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_buf_v_control.csv
@@ -62,7 +59,7 @@ buf_v_control
 can_bus
 =======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_can_bus.csv
@@ -70,7 +67,7 @@ can_bus
 cs_map
 ======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_cs_map.csv
@@ -78,7 +75,7 @@ cs_map
 cs_neg
 ======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_cs_neg.csv
@@ -86,7 +83,7 @@ cs_neg
 db
 ==
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_db.csv
@@ -94,7 +91,7 @@ db
 dc_conv
 =======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_dc_conv.csv
@@ -102,7 +99,7 @@ dc_conv
 display_struct
 ==============
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_display_struct.csv
@@ -110,7 +107,7 @@ display_struct
 energy
 ======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_energy.csv
@@ -118,7 +115,7 @@ energy
 fault
 =====
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_fault.csv
@@ -126,14 +123,14 @@ fault
 flash_param
 ===========
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_flash_param.csv
 
 flash_rtc
 =========
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_flash_rtc.csv
@@ -141,7 +138,7 @@ flash_rtc
 grid_lt
 =======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_grid_lt.csv
@@ -149,7 +146,7 @@ grid_lt
 grid_mon
 ========
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_grid_mon.csv
@@ -157,7 +154,7 @@ grid_mon
 g_sync
 ======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_g_sync.csv
@@ -165,7 +162,7 @@ g_sync
 hw_test
 =======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_hw_test.csv
@@ -173,7 +170,7 @@ hw_test
 io_board
 ========
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_io_board.csv
@@ -181,7 +178,7 @@ io_board
 iso_struct
 ==========
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_iso_struct.csv
@@ -189,7 +186,7 @@ iso_struct
 line_mon
 ========
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_line_mon.csv
@@ -201,7 +198,7 @@ require a bit of work to parse. They generally work by writing the timestamp of 
 and respond with the entries or events **older** than that time stamp. For more details, take a look at the
 :ref:`protocol-event-table` and :ref:`protocol-timeseries` pages.
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_logger.csv
@@ -209,7 +206,7 @@ and respond with the entries or events **older** than that time stamp. For more 
 modbus
 ======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_modbus.csv
@@ -217,7 +214,7 @@ modbus
 net
 ===
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_net.csv
@@ -225,7 +222,7 @@ net
 nsm
 ===
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_nsm.csv
@@ -233,7 +230,7 @@ nsm
 others
 ======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_others.csv
@@ -241,7 +238,7 @@ others
 power_mng
 =========
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_power_mng.csv
@@ -249,7 +246,7 @@ power_mng
 p_rec
 =====
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_p_rec.csv
@@ -257,7 +254,7 @@ p_rec
 prim_sm
 =======
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_prim_sm.csv
@@ -265,7 +262,7 @@ prim_sm
 rb485
 =====
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_rb485.csv
@@ -273,7 +270,7 @@ rb485
 switch_on_board
 ===============
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_switch_on_board.csv
@@ -281,7 +278,7 @@ switch_on_board
 temperature
 ===========
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_temperature.csv
@@ -289,7 +286,7 @@ temperature
 wifi
 ====
 
-.. csv-table:: 
+.. csv-table::
    :header-rows: 1
    :widths: 10, 5, 5, 5, 15, 40
    :file: objectgroup_wifi.csv

@@ -6,7 +6,7 @@ with open('README.md', 'rt') as fh:
 
 setup(
     name='rctclient',
-    version='0.0.2',
+    version='0.0.3',
     author='Stefan Valouch',
     author_email='svalouch@valouch.com',
     description='Implementation of the RCT Power communication protocol',
@@ -46,11 +46,12 @@ setup(
             'sphinx-autodoc-typehints',
             'sphinx-click',
             'sphinx-rtd-theme',
+            'recommonmark>=0.5.0',
         ],
     },
     entry_points={
         'console_scripts': [
-            'rctclient=rctclient.cli:cli',
+            'rctclient=rctclient.cli:cli [cli]',
         ],
     },
 
@@ -64,5 +65,6 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
 )

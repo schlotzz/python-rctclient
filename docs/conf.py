@@ -22,11 +22,11 @@ if on_rtd:
 # -- Project information -----------------------------------------------------
 
 project = 'rctclient'
-copyright = '2020, Peter Oberhofer, Stefan Valouch'
+copyright = '2020-2021, Peter Oberhofer, Stefan Valouch'
 author = 'Stefan Valouch'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.2'
+release = '0.0.3'
 
 
 # -- General configuration ---------------------------------------------------
@@ -39,6 +39,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx_autodoc_typehints',
     'sphinx_click.ext',
+    'recommonmark',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -49,6 +50,10 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+# Disable automatic quotes, which converts '--' to '—' (among others) which
+# breaks the CLI examples where the source is a python docstring and can't be
+# changes without interfering with CLI --help output.
+smartquotes = False
 
 # -- Options for HTML output -------------------------------------------------
 
